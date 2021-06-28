@@ -27,57 +27,69 @@ var btn = document.getElementById('explore-btn').addEventListener('click', funct
 });
 //for the another page 
 /* for the workouts  */
-let homepg = document.querySelector('.body-part');
-let anotherPg = document.querySelector('.workout-page');
-document.getElementById('workout-nav').addEventListener('click', function(){
-	anotherPg.style.display = 'flex';
-	homepg.style.display = 'none';
-	teamPage.style.display ='none';
-	classPage.style.display ='none';
-	gallaryPage.style.display ='none';
-
-});
-document.getElementById('home-nav').addEventListener('click', function(){
-	homepg.style.display = 'flex';
-	anotherPg.style.display = 'none';
-	teamPage.style.display ='none';
-	classPage.style.display ='none';
-	gallaryPage.style.display ='none';
-
-});
-/* for the classes */ 
 let classPage = document.getElementById('class-window');
-let classWindow = document.getElementById('class-nav').addEventListener('click',function(){
-	anotherPg.style.display = 'none';
-	homepg.style.display = 'none';
-	classPage.style.display ='flex';
-	teamPage.style.display ='none';
-	gallaryPage.style.display ='none';
-
-
-});
-/* for the team page */
+let homepg = document.querySelector('.body-part');
 let teamPage = document.getElementById('team-window');
-document.getElementById('team-nav').addEventListener('click',function(){
-	anotherPg.style.display = 'none';
-	homepg.style.display = 'none';
-	classPage.style.display ='none';
-	gallaryPage.style.display ='none';
-	teamPage.style.display ='flex';
-
-});
-// for the gallary page
 let gallaryPage = document.getElementById('gallary-window'); 
-document.getElementById('gallaries-nav').addEventListener('click',function(){
-	anotherPg.style.display = 'none';
-	homepg.style.display = 'none';
-	classPage.style.display ='none';
-	teamPage.style.display ='none';
+let anotherPg = document.querySelector('.workout-page');
+let x =window.matchMedia("(max-width:600px)");
+
+let y =window.matchMedia("(min-width:600px)");
+
+
+if (x.matches){
+	homepg.style.display = "flex";
+	teamPage.style.display ='flex';
+	classPage.style.display ='flex';
+	anotherPg.style.display = 'flex';
 	gallaryPage.style.display ='flex';
+}
+if (y.matches){
+	document.getElementById('workout-nav').addEventListener('click', function(){
+		anotherPg.style.display = 'flex';
+		homepg.style.display = 'none';
+		teamPage.style.display ='none';
+		classPage.style.display ='none';
+		gallaryPage.style.display ='none';
+	
+	});
+	document.getElementById('home-nav').addEventListener('click', function(){
+		homepg.style.display = 'flex';
+		anotherPg.style.display = 'none';
+		teamPage.style.display ='none';
+		classPage.style.display ='none';
+		gallaryPage.style.display ='none';
+	
+	});
+	/* for the classes */ 
+	let classWindow = document.getElementById('class-nav').addEventListener('click',function(){
+		anotherPg.style.display = 'none';
+		homepg.style.display = 'none';
+		classPage.style.display ='flex';
+		teamPage.style.display ='none';
+		gallaryPage.style.display ='none';
+	
+	
+	});
+	/* for the team page */
+	document.getElementById('team-nav').addEventListener('click',function(){
+		anotherPg.style.display = 'none';
+		homepg.style.display = 'none';
+		classPage.style.display ='none';
+		gallaryPage.style.display ='none';
+		teamPage.style.display ='flex';
+	
+	});
+	// for the gallary page
+	document.getElementById('gallaries-nav').addEventListener('click',function(){
+		anotherPg.style.display = 'none';
+		homepg.style.display = 'none';
+		classPage.style.display ='none';
+		teamPage.style.display ='none';
+		gallaryPage.style.display ='flex';
 
-});
-
-
+	});
+}
 
 
 
