@@ -534,12 +534,21 @@ ul a:hover{
 	width: 100%;
 	height: 100vh;
 }
+
+/* for team page */
 .team-page{
 	display: none;
 	background-color: rgb(19, 14, 15);
 	width: 100%;
 	height: 100vh;
-}.gallary-page{
+	
+}
+.team-title{
+	border: 1px solid white;
+	height: fit-content;
+	
+}
+.gallary-page{
 	display: none;
 	background-color: rgb(141, 79, 96);
 	width: 100%;
@@ -671,6 +680,7 @@ ul a:hover{
 		width: 100%;
 		background-size: 100%;
 		margin: 0;
+		height: 30vh;
 	}
 	
 	
@@ -732,8 +742,53 @@ ul a:hover{
 		font-size: 0.3em;
 		top:-20%;
 	}
-	.gallary-page{
-		background-color: black;
+	.workout-page{
+		display: flex;
+		width: auto;
+		/*border: 10px solid black;*/
 	}
-	
+	.img-box{
+		width: 40%;
+		margin: 0;
+		margin-top: 10%;
+		margin-left: 10%;
+		height: 30%;
+	}
+	.content{
+		padding: 0;
+		display: inline;
+		width: 70%;
+		font-size: 0.35em;
+		padding-right: 1em;
+		height: fit-content;
+	}
+	.workout-box{
+		width: 100%;
+		display: flex;
+		font-size: 0.52em;
+
+	}
+	.upper{
+		height: 10vh;
+	}
+	.lower{
+		height: 10vh;
+	}
+	.glutes{
+		height: 10vh;
+	}
+	.legs{
+		height: 10vh;
+	}
+
+	.gallary-page{
+		display: flex;
+	}
+	.team-page{
+		display: flex;
+
+	}
+	.class-page{
+		display: flex;
+	}
 }
