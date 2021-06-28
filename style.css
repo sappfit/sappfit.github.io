@@ -645,7 +645,10 @@ ul a:hover{
 		height: 200vh;
 	}
 	header{
-		height: 100px;
+		position: relative;
+		background: rgb(0,187,166);
+		background: linear-gradient(90deg, rgba(0,187,166,1) 22%, rgba(43,151,237,1) 44%, rgba(101,29,255,1) 63%, rgba(153,46,214,1) 97%);
+		box-shadow: 0px 5px 15px black;
 
 	}
 	.logo{
@@ -663,6 +666,7 @@ ul a:hover{
 		display: flex;
 		padding: 0;
 		width: auto;
+		
 	}
 	nav ul{
 		margin: 0;
@@ -678,9 +682,13 @@ ul a:hover{
 	}
 	.body-part{
 		width: 100%;
-		background-size: 100%;
+		background-size: 140% 100%;
 		margin: 0;
-		height: 30vh;
+		height: 50vh;
+		background-position-x: -100px;
+		box-shadow: 0px 5px 10px black;
+		z-index: 1;
+
 	}
 	
 	
@@ -688,8 +696,9 @@ ul a:hover{
 		display: inline;
 		width: auto;
 		margin: 0;
-		margin-top: 10%;
+		margin-top: 20%;
 		margin-left: 10%;
+		height: fit-content;
 	}
 
 	
@@ -736,30 +745,31 @@ ul a:hover{
 		font-size: 0.41em;
 	}
 	.button{
-		position: relative;
-		top: 0%;
-		width: 10%;
-		font-size: 0.3em;
-		top:-20%;
+		position: absolute;
+		width: 14%;
+		font-size: 0.35em;
+		top: 35%;
 	}
 	.workout-page{
-		display: flex;
+		display:flex;
+		height: fit-content;
+		padding-bottom: 2em;
 		width: auto;
 		/*border: 10px solid black;*/
 	}
 	.img-box{
 		width: 40%;
 		margin: 0;
-		margin-top: 10%;
+		margin-top: 20%;
 		margin-left: 10%;
-		height: 30%;
+		height: 20%;
 	}
 	.content{
 		padding: 0;
 		display: inline;
 		width: 70%;
 		font-size: 0.35em;
-		padding-right: 1em;
+		padding-right: 0.2em;
 		height: fit-content;
 	}
 	.workout-box{
@@ -790,5 +800,13 @@ ul a:hover{
 	}
 	.class-page{
 		display: flex;
+	}
+	.icons{
+		width: auto;
+		position:fixed;
+		border: 1px solid black;
+	}
+	.icons a{
+		font-size: 0.35em;
 	}
 }
