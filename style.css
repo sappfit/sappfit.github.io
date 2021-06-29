@@ -647,8 +647,8 @@ ul a:hover{
 	header{
 		position: relative;
 		background: rgb(0,187,166);
-		background: linear-gradient(90deg, rgba(0,187,166,1) 22%, rgba(43,151,237,1) 44%, rgba(101,29,255,1) 63%, rgba(153,46,214,1) 97%);
-		box-shadow: 0px 5px 15px black;
+		background: linear-gradient(90deg, rgba(0,187,166,1) 8%, rgba(43,151,237,1) 33%, rgba(101,29,255,1) 98%);
+		box-shadow: 0px 1px 15px black;
 
 	}
 	.logo{
@@ -682,12 +682,11 @@ ul a:hover{
 	}
 	.body-part{
 		width: 100%;
-		background-size: 140% 100%;
+		background-size: 150% 100%;
 		margin: 0;
 		height: 50vh;
-		background-position-x: -100px;
+		background-position-x: -150px;
 		box-shadow: 0px 5px 10px black;
-		z-index: 1;
 
 	}
 	
@@ -696,8 +695,8 @@ ul a:hover{
 		display: inline;
 		width: auto;
 		margin: 0;
-		margin-top: 20%;
-		margin-left: 10%;
+		margin-top: 15%;
+		margin-left: 7%;
 		height: fit-content;
 	}
 
@@ -750,19 +749,33 @@ ul a:hover{
 		font-size: 0.35em;
 		top: 35%;
 	}
+	.about{
+		width: auto;
+		margin: 0;
+		height: 50%;
+		background-size: 110% 100%;
+		font-size: 0.5em;
+	}
+	.abt-title{
+		border:1px solid black;
+		height: fit-content;
+		font-size: 0.85em;
+	}
 	.workout-page{
 		display:flex;
 		height: fit-content;
 		padding-bottom: 2em;
 		width: auto;
+		background: rgb(50,209,224);
+background: linear-gradient(94deg, rgba(50,209,224,1) 6%, rgba(3,127,144,1) 33%, rgba(41,84,153,1) 51%, rgba(88,64,244,1) 81%, rgba(101,29,255,1) 98%);
 		/*border: 10px solid black;*/
 	}
 	.img-box{
-		width: 40%;
+		width: 50%;
 		margin: 0;
-		margin-top: 20%;
-		margin-left: 10%;
-		height: 20%;
+		margin-top: 10%;
+		margin-left: 5%;
+		height: 30%;
 	}
 	.content{
 		padding: 0;
@@ -790,6 +803,9 @@ ul a:hover{
 	.legs{
 		height: 10vh;
 	}
+	.upper:hover{
+		pointer-events: none;
+	}
 
 	.gallary-page{
 		display: flex;
@@ -801,10 +817,10 @@ ul a:hover{
 	.class-page{
 		display: flex;
 	}
-	.icons{
+	.contacts{
 		width: auto;
 		position:fixed;
-		border: 1px solid black;
+		margin-left: -1%;
 	}
 	.icons a{
 		font-size: 0.35em;
